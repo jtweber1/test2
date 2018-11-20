@@ -1,0 +1,11 @@
+def main():
+	# A test program first written by Jerry Weber
+	print ("This program prints out two sets of chaotic numbers based on input.")
+	x = eval(input("Enter a number between 0 and 1: "))
+	y = eval(input("Enter a different number between 0 and 1: "))
+	print ("input value      x        y")
+	print ("__________________________")
+	for i in range(10):
+		x = 3.9 * x * (1-x)
+		y = 3.9 * y * (1-y)
+	main()
